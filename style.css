@@ -1,0 +1,460 @@
+body {
+    color: black;
+    background-color: #f8d7d7;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin: 0;
+    padding: 10px;
+}
+
+/* =========================
+   ELEMENT SELECTORS
+   ========================= */
+
+h1 {
+    color: white;
+    background: linear-gradient(to right, #222222, #b30000);
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    opacity: 0.95;
+
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto 15px auto;
+    border: 3px solid #222222;
+}
+
+h2 {
+    color: #b30000;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 5px;
+    margin: 15px 0 8px 0;
+    border-bottom: 3px solid #b30000;
+}
+
+p {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+
+    margin: 8px 0;
+    padding: 5px;
+    border-left: 3px solid #b30000;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    background-color: #222222;
+    text-align: center;
+
+    width: 90%;
+    padding: 8px;
+    margin: 0 auto 15px auto;
+    border: 3px solid #b30000;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
+.nav-link {
+    color: #b30000;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    padding: 5px 8px;
+    margin: 2px;
+}
+
+.nav-link:link {
+    color: #b30000;
+}
+
+.nav-link:visited {
+    color: #800000;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #b30000;
+}
+
+.nav-link:active {
+    color: white;
+    background-color: #222222;
+}
+
+/* =========================
+   PROFILE INFORMATION
+   ========================= */
+
+.profile-info {
+    background-color: white;
+    opacity: 0.95;
+
+    width: fit-content;
+    max-width: 90%;
+
+    padding: 8px;
+    margin: 10px auto;
+
+    border: 3px solid #b30000;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================
+   PROFILE IMAGE
+   ========================= */
+
+.profile-info img {
+    float: left;
+
+    width: 160px;
+    height: auto;
+
+    padding: 3px;
+    margin: 5px 15px 5px 0;
+
+    border: 3px solid #222222;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   CLEAR FLOAT
+   ========================= */
+
+.profile-info::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* =========================
+   SECTION TITLE
+   ========================= */
+
+.section-title {
+    color: #b30000;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+
+    padding: 5px;
+    margin: 10px 0;
+
+    border: 2px solid #b30000;
+    background-color: #f2f2f2;
+}
+
+/* =========================
+   FORM LABEL
+   ========================= */
+
+.form-label {
+    color: #222222;
+    font-weight: bold;
+    font-size: 15px;
+
+    display: inline;
+    padding: 0;
+    margin: 0 5px 0 0;
+}
+
+/* =========================
+   ID SELECTOR
+   ========================= */
+
+#main-header {
+    background: linear-gradient(to right, #222222, #b30000);
+    color: white;
+    text-align: center;
+
+    width: 90%;
+    height: 55px;
+    padding: 5px;
+    margin: 0 auto 15px auto;
+
+    border: 3px solid #222222;
+
+    position: relative;
+    z-index: 5;
+}
+
+#main-header h1 {
+    color: white;
+    background: none;
+
+    font-size: 26px;
+    text-align: center;
+
+    margin: 3px;
+    padding: 3px;
+}
+
+/* =========================
+   CONTACT ME HEADER
+   ========================= */
+
+#contact-section {
+    background: linear-gradient(to right, #222222, #b30000);
+    color: white;
+    text-align: center;
+
+    width: 90%;
+    height: auto;
+    padding: 8px;
+    margin: 0 auto 15px auto;
+
+    border: 3px solid #222222;
+
+    position: relative;
+    z-index: 5;
+}
+
+/* =========================
+   LISTS
+   ========================= */
+
+ul {
+    list-style-type: square;
+
+    background-color: white;
+    color: #b30000;
+
+    padding: 8px 25px;
+    margin: 10px 0;
+
+    border: 2px solid #b30000;
+
+    width: fit-content;
+}
+
+ol {
+    list-style-type: decimal;
+
+    background-color: white;
+    color: #b30000;
+
+    padding: 8px 25px;
+    margin: 10px 0;
+
+    border: 2px solid #222222;
+
+    width: fit-content;
+}
+
+li {
+    color: #b30000;
+
+    margin: 3px 0;
+    padding: 2px;
+}
+
+ul li::marker,
+ol li::marker {
+    color: #b30000;
+}
+
+/* =========================
+   FAVORITES AND GOALS
+   ========================= */
+
+body.favorites-page,
+body.goals-page {
+    background-color: #f8d7d7;
+    color: black;
+}
+
+body.favorites-page h1,
+body.goals-page h1 {
+    background: linear-gradient(to right, #222222, #b30000);
+}
+
+body.favorites-page h2,
+body.goals-page h2 {
+    color: #b30000;
+    border-bottom: 3px solid #b30000;
+}
+
+body.favorites-page p,
+body.goals-page p {
+    color: black;
+    border-left: 3px solid #b30000;
+}
+
+/* =========================
+   CONTACT FORM
+   ========================= */
+
+form {
+    background-color: #f2f2f2;
+
+    padding: 8px;
+    margin: 0;
+}
+
+form p {
+    margin: 10px 0;
+    padding: 0;
+
+    border-left: none;
+}
+
+/* =========================
+   TEXT INPUTS
+   ========================= */
+
+input[type="text"],
+input[type="email"] {
+    width: 150px;
+
+    padding: 4px;
+    margin: 0 5px;
+
+    background-color: #fff5f5;
+    border: 2px solid #b30000;
+
+    border-radius: 0;
+}
+
+/* =========================
+   SELECT BOXES
+   ========================= */
+
+select {
+    width: auto;
+
+    padding: 4px;
+    margin: 0 5px;
+
+    background-color: #fff5f5;
+    border: 2px solid #b30000;
+
+    border-radius: 0;
+}
+
+/* =========================
+   RADIO BUTTONS
+   ========================= */
+
+input[type="radio"] {
+    width: auto;
+
+    padding: 0;
+    margin: 3px;
+}
+
+/* =========================
+   CHECKBOXES
+   ========================= */
+
+input[type="checkbox"] {
+    width: auto;
+
+    padding: 0;
+    margin: 3px;
+}
+
+/* =========================
+   MESSAGE BOX
+   ========================= */
+
+textarea {
+    width: 300px;
+    height: 90px;
+
+    padding: 4px;
+    margin: 0 5px;
+
+    background-color: #fff5f5;
+    border: 2px solid #b30000;
+
+    border-radius: 0;
+
+    vertical-align: middle;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.btn {
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 5px 8px;
+    margin: 3px;
+
+    border: 2px solid #222222;
+}
+
+.primary {
+    color: white;
+    background-color: #b30000;
+    font-size: 15px;
+}
+
+/* =========================
+   VIDEO
+   ========================= */
+
+video {
+    width: 75%;
+    height: auto;
+
+    padding: 3px;
+    margin: 15px auto;
+
+    border: 3px solid #b30000;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   AUDIO
+   ========================= */
+
+audio {
+    margin: 15px auto;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    color: white;
+    background-color: #222222;
+    text-align: center;
+
+    padding: 10px;
+    margin-top: 15px;
+
+    border-top: 3px solid #b30000;
+
+    clear: both;
+}
